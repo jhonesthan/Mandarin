@@ -1,0 +1,272 @@
+
+
+.container {
+    max-width: 100vh;
+}
+
+.container .top-images {
+    display: flex;
+    /* background-color: bisque; */
+}
+
+.container .top-images img {
+    height: 100px;
+    padding: 2px;
+}
+#top-image-one {
+    height: 75px;
+    margin: auto 10px;
+    margin: 25px 0px;
+}
+
+
+.top {
+    height: 8rem;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.container .carousel img{
+    height: 420px;
+}
+
+/*  Section More */
+
+.more {
+    display: flex;
+}
+
+.more .subtitle {
+    text-align: left;
+    max-width: 90%;
+    height: 10rem;
+    padding-left: 10px;
+}
+
+.more .subtitle sub {
+    padding-bottom: 40px;
+
+    
+    color: #8a8686; 
+}
+
+.more .carousel-inner {
+    padding: 10px;
+    max-width: 30rem;
+    max-height: 350px;
+}
+
+.more span {
+    display: none;
+}
+
+.border-gradient1 {
+    height: 5px;
+    width: 49%;
+    margin: 5px 0px 40px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(187,24,115,1) 0%, rgba(70,47,142,1) 80%, rgba(61,49,144,1) 90%, rgba(61,49,144,1) 100%);
+}
+
+.border-gradient2 {
+    height: 5px;
+    width: 60%;
+    margin-top: 10px;
+    background: rgb(66,143,218);
+    background: linear-gradient(90deg, rgba(66,143,218,1) 2%, rgba(70,178,208,1) 36%, rgba(34,23,209,1) 73%, rgba(86,20,170,1) 92%, rgba(86,20,170,1) 100%);
+
+}
+
+.border-gradient3 {
+    height: 5px;
+    width: 60%;
+    background: rgb(66,143,218);
+    margin-top: 10px;
+    background: linear-gradient(90deg, rgba(66,143,218,1) 2%, rgba(70,178,208,0.9484536082474226) 30%, rgba(23,209,137,1) 73%, rgba(20,170,91,1) 92%, rgba(63,170,20,1) 100%);   
+}
+
+/* Footer */
+
+#orange {
+    background-color: orangered;
+    height: 120px;
+    max-width: 930px;
+    margin: 65px auto 25px auto;
+    padding: 25px 20px;
+    display: flex;
+}
+
+
+.orange-images {
+
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#orange #mandarin, #mandatrends {
+    height: 70px;
+} 
+
+#mandarin {
+    filter: grayscale(90%);
+
+}
+
+#mandatrends {
+    border-left: 1px solid #fff;
+}
+
+.orange-mandarin {
+    /* background-color: #8a8686; */
+    height: 50px;
+    margin: 0 20px;
+}
+
+footer {
+    height: 5rem;
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #8a8686;
+    margin: 0px 5px;   
+}
+
+footer a {
+    color: #8a8686;
+}
+
+
+/* Responsidade  */
+
+@media only screen and (max-device-width: 780px) {
+    
+        .container .carousel img{
+            height: 400px;
+        }
+        .more .subtitle h2, h1 {
+            margin-top: 5px;
+            font-size: 25px;       
+        }
+
+        .more .carousel-inner img {
+            height: 17rem;
+        }
+
+    }
+
+    @media only screen and (max-device-width: 700px) {
+
+        .container .carousel img{
+            height: 370px;
+        }
+
+        .more .subtitle h2, h1 {
+            font-size: 22px;
+        }
+
+        .more .carousel-inner img {
+            height: 250px;
+        }
+
+        .border-gradient2, .border-gradient3 {
+            margin-top: 0px;
+        }
+
+    }
+    
+    @media only screen and (max-device-width: 620px) {
+
+        
+        .container .carousel img{
+            height: 350px;
+            
+        }
+
+        .more .subtitle h2, h1 {
+            font-size: 18px;
+        }
+
+        .more .carousel-inner img {
+            height: 230px;
+        }
+
+        .border-gradient2, .border-gradient3 {
+            margin-top: 4px;
+        }
+        #orange #mandarin, #mandatrends {
+            height: 50px;
+        } 
+    }
+
+    @media only screen and (max-device-width: 570px) {
+
+        #top-image-one {
+            height: 70px;
+        }
+
+        .container .carousel img{
+            height: 300px;
+        }
+        .more {
+            justify-content: center;
+            padding: auto;
+            margin: 0;
+        }
+        
+        .more .carousel-inner {
+            max-width: 250px;
+
+        }
+        .more .carousel-inner img {
+            max-width: auto;
+            height: 230px;
+        }
+        .border-gradient2, .border-gradient3 {
+            margin: 7px 0;   
+        }
+    }
+
+    @media only screen and (max-device-width: 510px) {
+
+        #top-image-one {
+            height: 60px;
+        }
+
+        .more {
+            display: grid;
+        }
+        .more .carousel-inner {
+            max-width: 450px;
+        }
+    
+        #orange {
+            display: flex;
+        }
+
+        .orange-images {
+            width: 100%;
+        }
+        
+        #orange #mandarin, #mandatrends{
+            height: 45px;
+            margin: 0px 5px;
+        }
+        
+        footer small {
+            font-size: 12px;
+        }
+
+    }
+
+
+    
+    @media only screen and (max-device-width: 475px) {
+
+        
+
+        }
